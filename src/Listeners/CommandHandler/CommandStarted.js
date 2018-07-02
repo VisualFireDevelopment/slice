@@ -16,8 +16,8 @@ class CommandHandlerCommandStarted extends Listener {
 
   exec(m, c) {
     if (['info', 'database'].includes(c.id)) return;
-    if (m.guild) console.log(`User ${m.author.username} (${m.author.id}) issued server command ${this.client.akairoOptions.prefix}${c.id} in ${m.guild.name} (${m.guild.id}), #${m.channel.name}`);
-    else console.log(`User ${m.author.username} (${m.author.id}) issued private command ${this.client.akairoOptions.prefix}${c.id}.`);
+    if (m.guild) console.log(`User ${m.author.username} (${m.author.id}) issued server command ${this.client.defaultPrefix}${c.id} in ${m.guild.name} (${m.guild.id}), #${m.channel.name}`);
+    else console.log(`User ${m.author.username} (${m.author.id}) issued private command ${this.client.defaultPrefix}${c.id}.`);
   }
 }
 

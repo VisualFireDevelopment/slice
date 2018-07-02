@@ -18,7 +18,7 @@ class BotInfo extends Command {
   async exec(m) {
     const app = await this.client.fetchApplication();
     return m.channel.send(ce(
-      this.client.akairoOptions.colors.orange, null, 'Bot Information',
+      '#FE8B00', null, 'Bot Information',
       'Here\'s some information about me!',
       [
         { name: ':1234: Version', value: 'Version 2A' },

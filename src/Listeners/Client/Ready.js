@@ -15,11 +15,11 @@ class ClientReady extends Listener {
   }
 
   exec() {
-    this.client.user.setActivity(`${this.client.akairoOptions.prefix}help`, {
+    this.client.user.setActivity(`${this.client.defaultPrefix}help`, {
       url: 'https://www.twitch.tv/monstercat/',
       type: 'STREAMING'
     });
-    console.log(`Online and ready! This shard is on ${this.client.guilds.size} guilds.`);
+    this.client.log(`Online and ready! This shard is on ${this.client.guilds.size} guilds.`);
   }
 }
 

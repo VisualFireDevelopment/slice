@@ -61,7 +61,7 @@ class GuildInfo extends Command {
     await m.guild.members.fetch();
     const info = new Information(m.guild);
     return m.channel.send(ce(
-      this.client.akairoOptions.colors.orange, null, 'Guild Information',
+      '#FE8B00', null, 'Guild Information',
       'Here\'s some information about the part of me that\'s on your server!',
       [
         { name: ':pencil: Name', value: info.name.toString() },

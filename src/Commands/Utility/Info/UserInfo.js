@@ -60,7 +60,7 @@ class UserInfo extends Command {
       info.avatar = member.user.displayAvatarURL({ format: 'webp', size: 2048 });
     }
     return m.channel.send(ce(
-      this.client.akairoOptions.colors.orange, null, 'User Information',
+      '#FE8B00', null, 'User Information',
       `Here's some information about the ${info.bot} ${info.username}`,
       fields, null, { thumbnail: info.avatar }, true
     ));
